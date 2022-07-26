@@ -59,3 +59,11 @@ obj.interSection;
 obj.difference;
 obj.a_compliment;
 obj.cartesian_product();
+
+
+
+
+#Number of elemernts should be easily configurable
+#reading input is duplicated many times.
+
+
