@@ -23,3 +23,8 @@ end
 
 obj = FileOperations.new
 obj.convert_num_to_word
+
+
+#Overall looks good
+#method modularizing can be done
+#File closing needs to be done.
