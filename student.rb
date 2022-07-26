@@ -10,6 +10,7 @@ class Student
         @arts_marks = gets.chomp.to_i
         print "Student Bioolgy Marks: ";
         @bio_marks = gets.chomp.to_i
+    end
 
   
         def total_marks()
@@ -24,7 +25,7 @@ class Student
             puts "total marks of #{@studName}: #{@total}"
         end
 
-    end
+   
 
 
 end
