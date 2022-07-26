@@ -28,3 +28,7 @@ class DateFormat
 end
 obj = DateFormat.new;
 obj.format();
+
+#Why instance is required here? Just for single method
+#indentation is missing.
+#input reading should be outside the logic processing/ or date conversions
