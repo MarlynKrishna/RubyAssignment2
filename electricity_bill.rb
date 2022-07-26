@@ -47,3 +47,14 @@ class ElectricityBill
 end
 obj = ElectricityBill.new();
 obj.calculation;
+
+
+
+
+
+
+
+#Code should be modulirized to seperate methods, 
+#15% additional charge calculation should be to seperate method and UNIT PRICES should be taken into CONSTANST or shpould be easily configurable
+
+#The logic needs to improved
