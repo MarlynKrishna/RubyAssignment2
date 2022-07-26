@@ -23,7 +23,7 @@ class DateFormat
         else @type == 'PST' 
           puts "Default conversion to PST"
           puts  Date.parse(@date).strftime("%m/%d/%Y")
-         end
+        end
   end
 end
 obj = DateFormat.new;
