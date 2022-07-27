@@ -11,12 +11,12 @@ class ElectricityBill
             puts "Calculated Electricity Bill is: #{@bill}";
             
             elsif @units <= 200
-                @bill = ((100 * 10) + (@units - 100) * 11) +50 ;
+                @bill = ((100 * 6) + (@units - 100) * 11) +50 ;
                 puts "Calculated Electricity Bill is: #{@bill}";
                         
         
             else @units <= 300 
-                @bill = ((100 * 10)+ (100 * 15)+ (@units - 200) * 15) + 50;
+                @bill = ((100 * 6)+ (100 * 11)+ (@units - 200) * 15) + 50;
                 puts "Calculated Electricity Bill is: #{@bill}";
                         
             end
