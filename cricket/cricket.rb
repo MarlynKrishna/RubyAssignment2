@@ -15,12 +15,13 @@ class BookCricket
     puts "\n\n"
   end
   def game(balls, team,team_name, innings)
-        @@balls = balls
-        @@team = team
-        @@team_name = team_name
+        @@balls, @@team, @@team_name = balls, team,  team_name
+      
     puts "Total Balls to play #{balls}"
           @@total_score=0
           @ball=0
+          wickets = 0
+          overs = 0
           @score_card2 = []
           @score_card1 = []
           puts "Team:: #{team_name}  Players :#{team}"
@@ -34,17 +35,32 @@ class BookCricket
             @@total_score += @points
             @ball.next    
             puts "Ball Num:: #{@ball}"
-            puts "Page Number #{pageNum}    Point : #{@points}    Score : #{@@total_score}"  
+            puts "Points : #{@points}    Score : #{@@total_score}"  
             if(@points==0)
               puts "#{@current_player} player is out at  #{@ball}"
-              puts "wickets :: #{@current_player} "
+              puts "wickets :: #{wickets = wickets+1} "
               # puts "-------------------------------------------------------"
               puts "Players remaining are::  #{team.count} "
               puts "-------------------------------------------------------"
-              @current_player = team.shift
+               @current_player = team.shift
+            
             end
-            if(@ball == $balls)
-              puts "Players remaining are::  #{team.count} "
+            if (@ball%6 == 0)
+              
+              puts "Over #{overs = overs+1} is completed  "
+              puts "=================================="
+            end
+            # if @current_player.nil?
+
+            #   puts "finished"
+        
+            #   break
+        
+            #  end
+
+            
+            if(@ball == $balls ||  @current_player.nil?)
+              
               puts "game finished"
               break
             end
